@@ -1,8 +1,7 @@
 /*
-
-  Reference the libraries I used herein
-
-*/
+ *
+ *
+ */
 
 // Include libraries
 #include <SPI.h>
@@ -30,27 +29,25 @@ const byte address[6] = "00001"; // Address, might change this later
 
 Joystick* joystickL;
 Joystick* joystickR;
-int data[4]; // rename variable later
+int data[4];
 
 //
 void setup() {
   Serial.begin(115200);
   //radio.begin();
   if (!radio.begin()){
-    Serial.println("Wetin?");
+    Serial.println("No connection?");
   }
   radio.openWritingPipe(address);
   radio.setPALevel(RF24_PA_LOW);
   //radio.setDataRate(RF24_250KBPS);
   radio.stopListening();
 
+  //
   joystickL = new AxisJoystick(SW_PIN, VRX1_PIN, VRY1_PIN); //
   joystickR = new AxisJoystick(SW_PIN, VRX2_PIN, VRY2_PIN);
-
-  // this or below?
-//  joystickL->calibrate(LOW_END, HIGH_END);
-//  joystickR->calibrate(LOW_END, HIGH_END);
-
+  
+  //
   joystickL->calibrate(LOW_END, HIGH_END, DEVIATION);
   joystickR->calibrate(LOW_END, HIGH_END, DEVIATION);
 }
@@ -69,19 +66,4 @@ void loop() {
 
   radio.write(&data, sizeof(data));
 
-//  delay(500);
-
 }
-
-
-//Look up powering up and down the radio on receiver side as well
-//  radio.powerDown();
-//avr_enter_sleep_mode(); // Custom function to sleep the device
-//radio.powerUp();
-
-// Check docs for stuff about channels and anything we might need
-// check examples too
-
-// what should be the delay between packets??
-// Sort out cabling for vx and vy later
-// We might have to tune the range of values of the joystick. But that will come later
