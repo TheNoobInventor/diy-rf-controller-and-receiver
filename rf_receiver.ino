@@ -18,18 +18,14 @@ RF24 radio(49, 48); // pin for CE pin, pin  for CSN pin.
 // Initialize servo object
 Servo myservo;
 
-// #define servoPin 13 // which one instead?
 const int servoPin = 13; // servo pin
 const byte address[6] = "00001";
 int val_x, val_y;
 
+//
 void setup() {
   Serial.begin(115200);
-  //while(!Serial){
-  // 
-  //}
-  //
-  //radio.begin();
+
   if (!radio.begin()){
     Serial.println("Wetin?");
   }
@@ -77,19 +73,6 @@ void loop() {
       myservo.write(90);
     }
     
-//    delay(300);
-
   }
 
 }
-
-// Need to show how to calibrate the servos
-// check the sketch I wrote for calibration and the bookmarked page
-// maybe we'll connect all the servos together and see run the
-// the sketch
-// seems like the servo calibrates itself ie returning to a
-// starting position before the loop is started
-
-// Understand the different lines and sections of the code, comment accordingly
-
-// Play around with delay?
