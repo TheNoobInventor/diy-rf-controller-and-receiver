@@ -12,7 +12,6 @@
 #include <Joystick.h>
 #include <XYReplacerJoystick.h>
 #include <AxisJoystick.h>
-#include <DelegateJoystick.h>
 
 // instantiate an object for the nRF24L01 transceiver
 RF24 radio(7, 8); // Pin 7 for CE pin, pin 8 for CSN pin
