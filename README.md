@@ -2,4 +2,15 @@
 ... no soldering required
 
 
-rf transmitter or controller?
+
+## RF Transmitter
+
+<p align="center">
+  <img src=images/rf_transmitter.png>
+</p>
+
+## RF Receiver
+
+<p align="center">
+  <img src=images/rf_receiver.png>
+</p>
