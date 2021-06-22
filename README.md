@@ -1,26 +1,44 @@
-# diy-rf-transmitter-and-receiver
-... no soldering required
+# DIY RF Transmitter and Receiver 
+no soldering required
 
 
 ## Hardware
 
+### Components
+This includes tools and misc like double sided tape
 
-## Software and setup
+Pictures of some components/sensors
 
+### Assembly
 
-
-## RF Transmitter
+#### RF Transmitter
 
 <p align="center">
   <img src=images/rf_transmitter.png>
 </p>
 
-## RF Receiver
+#### RF Receiver
 
 <p align="center">
   <img src=images/rf_receiver.png>
 </p>
 
-images of both circuits in their respective subsections
+Notes about assembly. Some observations too
+Pictures of the assembled stuff
 
-## Videos
+## Software
+
+### Software architecture
+Software used,
+
+### Software install
+how to download and run the code
+
+## Video
+
+## Observations
+
+
+## Future work/suggestions
+
+## References
