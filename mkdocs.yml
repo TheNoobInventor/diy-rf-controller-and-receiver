@@ -1,0 +1,22 @@
+site_name: Diy RF Transmitter and Receiver
+site_url: ''
+use_directory_urls: False
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+repo_url: https://github.com/TheNoobInventor/diy-rf-transmitter-and-receiver
+repo_name: TheNoobInventor/diy-rf-transmitter-and-receiver
+plugins:
+  - search:
+      lang: en
